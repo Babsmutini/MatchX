@@ -1,0 +1,372 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  overflow-x: hidden; /*enabled it to off the overflow of the purple color */
+  color: #818181;
+  cursor: url(../img/cursor.svg), pointer;
+}
+/* LOADER 2 */
+
+#loader-2 span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #3498db;
+  margin: auto;
+}
+.loader{
+  background: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+
+
+}
+.load{
+
+}
+#loader-2 span:nth-child(1){
+  background-color: #52C7FF;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+#loader-2 span:nth-child(2){
+  background-color: #FF5872;
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+#loader-2 span:nth-child(3){
+  background-color: #D8A1FF;
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+@keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25%{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+/* Main-css */
+.secondaryColor{
+  background-color: #F9FCFF;
+  cursor: url(../img/cursor.svg), pointer ;
+}
+.pColor{
+  color: #350153;
+}
+.pColor3{
+  color: 818181;
+}
+
+input[type=email]{
+  width: 100%;
+  height: 56px;
+  border: 1px solid #8D008E;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  transition: .3s;
+  color: #A5A5A5;
+}
+input[type=email]:focus{
+  border-color: #8D008E;
+  box-shadow: 0 0 8px 0 #8D008E;
+}
+button{
+  background: #8D008E;
+  height: 56px;
+  border-radius: 4px;
+  border: 1px solid #8D008E;
+  color: white;
+  font-size: 15px;
+  padding: 10px 24px;
+
+}
+.font-light{
+  font-weight: 200;
+}
+font-belight{
+  font-weight: 400;
+}
+.font-medium{
+  font-weight: 600;
+}
+.together input[type=email]{
+  font-size: 12px;
+  padding-left: 8px;
+}
+.together{
+  position: relative;
+  /* display: inline; */
+}
+.together button{
+  position: absolute;
+  left: 57%;
+}
+.content{
+  /* display: flex;
+  flex-wrap: wrap; */
+  position: relative;
+  /* overflow: hidden; */
+  /* height: 100vh; */
+  /* width: 100%; */
+}
+.wrapper{
+  margin: 0 10px;
+}
+.soon{
+  text-align: left;
+}
+.circular{
+  /* position: relative; */
+
+}
+.circles{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+}
+.circle1{
+  background: #D8A1FF;
+  left: 40%;
+  top:  30%;
+  position: absolute;
+  overflow:hidden;
+}
+.circle2{
+  background: #06E4B2;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+.circle3{
+  position: absolute;
+  background: #FF5872;
+  left: 90%;
+  top: 10%;
+}
+.circle4{
+  position: absolute;
+  background: #52C7FF;
+  left: 10%;
+  top: 95%;
+}
+.circle5{
+  position: absolute;
+  background: #FF5872;
+  left: 70%;
+  top: 80%;
+}
+.circle6{
+  position: absolute;
+  background: #FFFFFF;
+  left: 50%;
+  top: 90%;
+}
+.heading{
+  margin-top: 1em;
+  padding: 0;
+}
+.little{
+  line-height: 24px;
+}
+#screen-1{
+  /* display: none; */
+}
+#screen-2{
+/* display: none; */
+}
+#screen-3{
+    display: none;
+}
+#screen-4{
+  display: none;
+}
+#screen-5{
+  display: none;
+}
+#screen-6{
+  display: none;
+}
+#section-text2{
+  display: none;
+  position: absolute;
+  top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+ #section-text3{
+  display: none;
+  position: absolute;
+  top: 0;
+}
+.smallhead{
+  margin-top: 5em;
+}
+.pColor2{
+  color: #2D2C2C;
+}
+
+
+@media only screen and (max-width: 1400px){
+  .together button{
+    position: absolute;
+    left: 76% !important;
+  }
+}
+@media only screen and (max-width: 700px){
+
+    #screen-1{
+      /* display: none; */
+    }
+    #screen-2{
+      /* display: none; */
+    }
+    #screen-3{
+        display: none;
+        /* position: absolute;
+        top: 0%;
+        padding: 0; */
+    }
+    #screen-4{
+      display: none;
+      position: absolute;
+      /* top: 0%;
+      right: 4%;
+      padding: 0; */
+    }
+    input[type=email]{
+      height: 33px;
+    }
+    button{
+      height: 33px;
+      font-size: 12px;
+      padding: 7px 32px;
+
+    }
+    #screen-5{
+      display: none;
+      /* position: absolute;
+      padding: 0; */
+    }
+    #screen-6{
+      display: none;
+      /* position: absolute;
+      padding: 0; */
+    }
+    #section-text1 h1,#section-text2 h1,#section-text3 h1{
+      font-size: 20px;
+    }
+    .mt-15{
+        margin-top: -45px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .soon{
+    /* margin: 6em; */
+    text-align: left;
+    position: relative;
+    color: #350135;
+  }
+  input[type=email]{
+    width: 100%;
+    height: 56px;
+    border: 1px solid #8D008E;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    color: #A5A5A5;
+  }
+  input[type=email]:focus{
+    border-color: #8D008E;
+    box-shadow: 0 0 8px 0 #8D008E;
+  }
+  button{
+    background: #8D008E;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #8D008E;
+    color: white;
+    font-size: 20px;
+    padding: 10px 24px;
+
+  }
+  .together input[type=email]{
+    font-size: 16px;
+    padding-left: 16px;
+  }
+  .together{
+    position: relative;
+    /* display: inline; */
+  }
+  .together button{
+    position: absolute;
+    left: 71%;
+  }
+
+  .wrapper{
+    margin: 0 7em;
+  }
+  .main-section{
+      position: relative;
+  }
+  .iphone{
+    position: absolute;
+    z-index: 999;
+    top: 0%;
+    left: 5em;
+    margin: 0;
+    margin-top: -50px;
+    padding: 0;
+
+  }
+  .form{
+    position: absolute;
+  }
+
+  .heading{
+    text-align: left;
+
+  }
+  #section-text2{
+    display: none;
+    position: absolute;
+    top: -70%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #section-text3{
+    display: none;
+    z-index: 999;
+    /* visibility: hidden; */
+    position: absolute;
+    top: -62%;
+  }
+
+  .phoneSection2{
+    margin-left: -50px;
+    margin-top: 4em !important;
+  }
+
+
+
+}
